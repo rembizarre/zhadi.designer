@@ -3,17 +3,17 @@ const portfolioTypes = [
   {
     id: 1,
     name: 'Гостиная',
-    count: 12,
+    count: 16,
   },
   {
     id: 2,
     name: 'Холл',
-    count: 7,
+    count: 10,
   },
   {
     id: 3,
     name: 'Детская',
-    count: 10,
+    count: 14,
   },
   {
     id: 4,
@@ -28,25 +28,20 @@ const portfolioTypes = [
   {
     id: 6,
     name: 'Ванная',
-    count: 17,
+    count: 21,
   },
   {
     id: 7,
     name: 'Кухня',
-    count: 4,
+    count: 11,
   },
   {
     id: 8,
     name: 'Спальня',
-    count: 5,
+    count: 9,
   },
   {
     id: 9,
-    name: 'Главная',
-    count: 3,
-  },
-  {
-    id: 10,
     name: 'Графический дизайн',
     count: 10,
   }
