@@ -13,7 +13,7 @@ const portfolioTypes = [
   {
     id: 3,
     name: 'Детская',
-    count: 14,
+    count: 13,
   },
   {
     id: 4,
