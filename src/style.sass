@@ -1,0 +1,700 @@
+// resetting styles
+*,
+*:before,
+*:after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+#smaller
+  width: 130px !important
+  height: 130px !important
+  margin-bottom: 20px
+  @media (max-width:1000px)
+    width: 60px !important
+    height: 60px !important
+    margin-bottom: 15px
+
+html
+  scroll-behavior: smooth
+
+body
+  background: #ecf4f4
+  width: 100%
+  height: 100%
+
+// Main page styles
+.main
+  width: 100%
+  position: relative
+  @media screen and (max-width: 1000px)
+    &__quote
+      font-size: 18px !important
+    &__content
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__block
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    &__name
+      font-size: 16px !important
+    &__speciality
+      font-size: 14px !important
+    &__title
+      font-size: 28px !important
+    &__txt
+      font-size: 14px !important
+  @media screen and (max-width: 500px)
+    &__img
+      width: 300px !important
+      height: 400px !important
+    &__block
+      width: 90vw !important
+      align-items: center
+      display: flex
+      flex-direction: column
+  &__bg
+    width: 100%
+    height: 80vh
+    display: block
+    background-image: url(./assets/images/mainBg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  &__quote
+    font-family: 'Tenor Sans', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 28px
+    margin: 0 auto
+    text-align: center
+    text-transform: uppercase
+    color: #fff
+    background: #1D4230
+    width: 100%
+    display: block
+    padding: 15px
+  &__title
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 49px
+    text-transform: uppercase
+    text-align: center
+    color: #1D4230
+    margin-top: 50px
+  &__content
+    margin-top: 30px
+    display: flex
+    justify-content: space-evenly
+  &__block
+    width: 470px
+    background: #fff
+    border-radius: 5px
+    padding: 35px
+    border: 1px solid #D6D6D6
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.2)
+  &__img
+    width: 400px
+    height: 500px
+    object-fit: cover
+  &__name
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+    margin-top: 15px
+    color: #1D4230
+  &__speciality
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    text-align: center
+    text-transform: uppercase
+    color: #1D4230
+    margin: 0 auto
+    opacity: 0.6
+  &__description
+    background: #1D4230
+    padding: 35px 0 10px 0
+    margin-top: 35px
+  &__txt
+    font-family: 'Open Sans'
+    font-style: normal
+    max-width: 1350px
+    font-weight: 400
+    padding: 0 20px
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #fff
+    margin: 0 auto 35px auto
+    &:last-child
+      margin-bottom: 35px
+
+// About page styles
+.about
+  overflow: hidden
+  padding-top: 140px
+  position: relative
+  width: 100%
+  @media screen and (max-width: 1000px)
+    padding-top: 90px
+    &__title
+      font-size: 24px !important
+    &__subtitle
+      margin-top: 10px !important
+      width: 70vw !important
+    &__photo
+      width: 350px !important
+      margin-top: 50px !important
+    &__name
+      font-size: 16px !important
+      line-height: 20px !important
+    &__speciality
+      font-size: 14px !important
+      line-height: 16px !important
+    &__description
+      font-size: 14px !important
+      line-height: 20px !important
+      padding: 0 20px
+  @media screen and (max-width: 500px)
+    padding-top: 90px
+    &__title
+      font-size: 18px !important
+    &__subtitle
+      margin-top: 5px !important
+      width: 70vw !important
+    &__photo
+      width: 350px !important
+      margin-top: 50px !important
+    &__name
+      font-size: 16px !important
+      line-height: 20px !important
+    &__speciality
+      font-size: 14px !important
+      line-height: 16px !important
+    &__description
+      font-size: 14px !important
+      line-height: 20px !important
+      padding: 0 20px
+  &__block
+    margin-bottom: 60px
+  &__background
+    width: 100%
+    position: absolute
+    display: block
+    z-index: -2
+    height: 660px
+  &__bg
+    opacity: 0.7
+    width: 100%
+    position: absolute
+    height: 100%
+    object-fit: cover
+  // &__hover
+  //   background: #000
+  //   width: 100%
+  //   height: 100%
+  //   position: absolute
+  //   opacity: 0.2
+  //   z-index: -1
+  &__title
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 49px
+    text-transform: uppercase
+    color: #1D4230
+    text-align: center
+    padding-top: 20px
+  &__subtitle
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 19px
+    color: #1D4230
+    text-align: center
+    width: 50vw
+    margin: 0 auto
+    margin-top: 20px
+  &__photo
+    display: block
+    margin: 0 auto
+    margin-top: 100px
+    max-width: 500px
+  &__name
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 28px
+    text-transform: uppercase
+    text-align: center
+    color: #1D4230
+    margin-top: 5px
+  &__speciality
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 21px
+    text-transform: uppercase
+    color: #1D4230
+    opacity: 0.6
+    text-align: center
+    margin: 0 auto
+    display: block
+    margin-top: 5px
+  &__description
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 28px
+    text-align: center
+    color: #1D4230
+    margin-top: 20px
+    padding: 0 10px
+
+// Contacts page styles
+.contacts
+  padding-top: 140px
+  @media screen and ( max-width: 1000px )
+    padding-top: 90px
+    &__title
+      font-size: 24px !important
+    &__subtitle
+      font-size: 1em !important
+    &__label
+      font-size: 16px !important
+      line-height: 22px !important
+  @media screen and ( max-width: 1000px )
+    margin-bottom: 20px
+    &__title
+      font-size: 18px !important
+    &__subtitle
+      font-size: 0.8em !important
+      line-height: 18px !important
+    &__label
+      font-size: 14px !important
+    &__social
+      width: 30px
+  &__title
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 49px
+    text-transform: uppercase
+    color: #1D4230
+    text-align: center
+    margin-top: 30px
+  &__subtitle
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 2em
+    text-align: center
+    width: 40vw
+    line-height: 49px
+    margin: 20px auto
+    color: #1D4230
+    a
+      text-decoration: underline
+      color: #1D4230
+  &__form
+    margin-top: 50px
+    max-width: 70vw
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+  &__label
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 33px
+    text-transform: uppercase
+    color: #1D4230
+    margin-bottom: 5px
+  &__input
+    padding: 10px
+    background: #ECECEC
+    border: 2px solid #A4A4A4
+    height: 40px
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 33px
+    text-transform: uppercase
+    color: #1D4230
+    margin-bottom: 5px
+    box-shadow: inset 6px 4px 8px rgba(0, 0, 0, 0.2)
+  &__message
+    padding: 10px
+    background: #ECECEC
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 33px
+    text-transform: uppercase
+    color: #1D4230
+    margin-bottom: 5px
+    border: 2px solid #A4A4A4
+    margin-bottom: 5px
+    resize: none
+    box-shadow: inset 6px 4px 8px rgba(0, 0, 0, 0.2)
+  &__line
+    width: 40px
+    height: 2px
+    background: #1D4230
+    border: none
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+  &__socials
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 30px
+    margin-top: 20px
+
+// Services page styles
+.services
+  overflow: hidden
+  padding-top: 140px
+  @media (min-width: 2200px)
+    &__stages
+      &_number
+        hr
+          width: 14vw !important
+
+  @media (max-width: 1200px)
+    &__stages
+      &_block
+        margin: 0 20px !important
+  @media (max-width:1000px)
+    padding-top: 90px
+    .bigger
+      width: 360px
+    &__img
+      width: 75px !important
+      height: 75px !important
+    &__header
+      font-size: 16px !important
+    &__subheader
+      font-size: 14px !important
+    &__title
+      font-size: 20px !important
+    &__block
+      width: 300px !important
+    &__prices
+      &_container
+        padding: 0 10px !important
+        margin-top: 20px !important
+      &_header
+        font-size: 12px !important
+        line-height: 20px !important
+        margin-bottom: 20px
+      &_subheader
+        font-size: 12px !important
+      &_btn
+        font-size: 14px !important
+    &__stages
+      &_number
+        width: 60px !important
+        height: 60px !important
+        font-size: 20px !important
+        hr
+          width: 15vw !important
+      &_block
+        margin: 0 20px !important
+      &_header
+        font-size: 12px !important
+      &_item
+        font-size: 12px !important
+        line-height: 20px !important
+  @media (max-width: 760px)
+    &__prices
+      &_container
+        overflow: auto
+      &_splitter
+        margin: 0 20px
+    &__stages
+      padding: 0 !important
+      &_container
+        overflow: auto
+        justify-content: left !important
+      &_block
+        margin-right: 20px !important
+      &_number
+        hr
+          width: 20vw !important
+      &_header
+        font-size: 12px !important
+        line-height: 20px !important
+        max-width: 110px !important
+      &_menu
+        display: none
+  @media (max-width: 500px)
+    &__stages_container
+      justify-content: space-between !important
+      background-color: #1d4230 !important
+    &__stages_header
+      min-width: 110px
+    &__stages_number
+      hr
+        width: 34vw !important
+  &__title
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 49px
+    text-transform: uppercase
+    color: #1D4230
+    padding-top: 30px
+    text-align: center
+  &__container
+    display: flex
+    max-width: 1440px
+    flex-wrap: wrap
+    justify-content: center
+    margin: 0 auto
+    row-gap: 50px
+    column-gap: 50px
+    margin-top: 30px
+  &__block
+    width: 400px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+  &__img
+    width: 150px
+    height: 150px
+  &__header
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    text-align: center
+    font-size: 22px
+    line-height: 33px
+    text-transform: uppercase
+    color: #1D4230
+  &__subheader
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    text-transform: uppercase
+    color: #1D4230
+    opacity: 0.7
+  &__modalBtn
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    margin-top: 5px
+    font-size: 20px
+    border: none
+    background: transparent
+    transition: .3s
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 2px solid #6C6C6C
+    padding: 10px
+    &:hover
+      background: #08432F
+      color: #fff
+      border-color: #08432F
+  &__prices
+    background: #08432F
+    margin-top: 50px
+    padding-bottom: 50px
+    &_container
+      display: flex
+      padding: 0 20px
+      margin-top: 40px
+      justify-content: space-between
+      position: relative
+    &_block
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+    &_txt
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
+    &_header
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 700
+      font-size: 22px
+      line-height: 49px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+    &_subheader
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+    &_divider
+      width: 80%
+      margin: 10px auto
+      height: 4px
+      display: block
+      border: none
+      background: #fff
+    &_btn
+      margin-top: 150px
+      border: 2px solid #FFFFFF
+      border-radius: 50px
+      background: transparent
+      padding: 15px 25px
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      line-height: 24px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+    &_splitter
+      width: 2px
+      border-color: #fff
+      background: #fff
+      display: block
+  &__stages
+    max-width: 100%
+    margin: 0 auto
+    &_container
+      display: flex
+      justify-content: center
+      margin: 0 auto
+      margin-top: 25px
+      max-width: 100%
+      margin-left: 0
+      background: #1d4230 !important
+      padding: 20px 0
+    &_block
+      display: flex
+      flex-direction: column
+      margin-right: 40px
+      margin-left: 40px
+      &:last-child
+        margin-right: 0
+    &_number
+      width: 70px
+      height: 70px
+      background: #fff
+      border-radius: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #1d4230 !important
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 700
+      font-size: 36px
+      line-height: 49px
+      text-transform: uppercase
+      color: #FFFFFF
+      position: relative
+      hr
+        left: 100%
+        background: #fff
+        border: none
+        height: 4px
+        width: 16vw
+        position: absolute
+    &_header
+      margin-top: 20px
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 700
+      font-size: 20px
+      line-height: 27px
+      text-transform: uppercase
+      color: #fff
+      max-width: 280px
+    &_menu
+      margin-top: 15px
+      list-style-position: inside
+      max-width: 400px
+    &_item
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 15px
+      line-height: 27px
+      color: #fff
+      max-width: 280px
+
+// optional styles
+.white
+  color: #fff !important
+
+.bigger
+  width: 500px
+
+// modal window React
+.modal
+  &__close
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 10px
+    right: 10px
+    background: transparent
+    border: none
+    transition: .3s
+    width: 30px
+    height: 30px
+    border-radius: 50px
+    img
+      width: 20px
+    &:hover
+      cursor: pointer
+      transform: scale(1.2)
+  &__list
+    padding: 20px 40px
+    color: #fff
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 15px
+    line-height: 27px
+
+.ReactModal__Overlay
+  opacity: 0
+  transition: opacity 0.3s ease-in-out
+  position: relative
+  &--after-open
+    opacity: 1
+  &--before-close
+    opacity: 0

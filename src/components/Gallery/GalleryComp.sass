@@ -1,0 +1,52 @@
+.portfolio
+  padding-top: 140px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  @media (max-width: 1000px)
+    padding-top: 90px
+  &__choosen
+    padding: 0 40px
+    max-width: 1440px
+    margin: 0 auto
+    padding-top: 140px
+  &__title
+    font-family: 'Tenor Sans'
+    margin-top: 50px
+    font-style: normal
+    font-weight: 400
+    font-size: 40px
+    line-height: 47px
+    text-transform: uppercase
+    color: #1D4230
+  &__gallery
+    margin-top: 25px
+    display: flex
+    flex-wrap: wrap
+    gap: 40px
+    @media (max-width: 1000px)
+      justify-content: center
+  &__block
+    display: flex
+    flex-wrap: wrap
+    width: 300px
+    overflow: hidden
+    @media (max-width: 1000px)
+      width: 40vw
+    @media (max-width: 725px)
+      width: 50vw
+    @media (max-width: 500px)
+      width: 70vw
+    &:hover
+      img
+        transform: scale(1.2)
+  &__image
+    width: 300px
+    transition: .3s
+    @media (max-width: 1000px)
+      width: 40vw
+    @media (max-width: 725px)
+      width: 50vw
+    @media (max-width: 500px)
+      width: 70vw

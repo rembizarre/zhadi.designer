@@ -1,0 +1,43 @@
+.footer
+  overflow: hidden
+  margin-top: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin-bottom: 50px
+  @media screen and (max-width: 1000px)
+    margin-top: 30px
+    margin-bottom: 30px
+    &__title
+      font-size: 25px !important
+    &__socials
+      gap: 20px !important
+    &__social
+      width: 30px
+  @media screen and (max-width: 500px)
+    &__title
+      font-size: 18px !important
+    &__socials
+      margin-top: 10px !important
+    &__social
+      width: 20px
+  &__title
+    font-family: 'Tenor Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 32px
+    line-height: 37px
+    color: #1D4230
+    text-align: center
+  &__socials
+    margin-top: 20px
+    display: flex
+    gap: 30px
+  &__line
+    width: 40px
+    height: 2px
+    background: #1D4230
+    border: none
+    margin: 0 auto
+    margin-top: 20px
