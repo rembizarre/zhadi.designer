@@ -5,7 +5,7 @@ import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 
-// Indicating pages for AppRouter
+// array of all routes for AppRouter
 const publicRoutes = [
   {
     path: '/',

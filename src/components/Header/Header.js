@@ -45,7 +45,7 @@ const Header = () => {
         <nav className="header__nav">
           <img
             onClick={handleBurger}
-            src="./images/burgerMenuIcon.svg"
+            src="../images/burgerMenuIcon.svg"
             alt="Menu"
             className="header__icon"
           />

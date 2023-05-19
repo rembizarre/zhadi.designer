@@ -89,7 +89,7 @@ const Services = ({ useSetIsContact }) => {
     },
   ];
 
-  const services = [
+  const service = [
     {
       header: 'План расстановки мебели',
       items:
@@ -189,11 +189,11 @@ const Services = ({ useSetIsContact }) => {
       <h2 className="services__title">Услуги</h2>
       <div className="services__container">
         {/* creating services */}
-        {services.map((service, i) => {
+        {service.map((service, i) => {
           return (
             <animated.div
               style={springs[i]}
-              className={`services__block ${i >= 3 ? 'bigger' : ''}`}>
+              className={`services__block ${i > 3 ? 'bigger' : ''}`}>
               <img
                 className="services__img"
                 id={service.header === 'Чертеж' ? 'smaller' : ''}
@@ -214,13 +214,13 @@ const Services = ({ useSetIsContact }) => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={modalStyles}
-        contentLabel={services[currentIndex].header}>
+        contentLabel={service[currentIndex].header}>
         <div>
           <div onClick={closeModal} className="modal__close">
             <img src={Cross} alt="Закрыть" />
           </div>
           <ul className="modal__list">
-            {services[currentIndex].modal.map((item) => (
+            {service[currentIndex].modal.map((item) => (
               <li>{item}</li>
             ))}
           </ul>
