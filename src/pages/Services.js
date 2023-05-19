@@ -19,7 +19,6 @@ Modal.setAppElement('#root');
 
 const Services = () => {
 
-
   const [modalIsOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 

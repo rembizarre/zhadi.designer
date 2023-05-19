@@ -5,9 +5,12 @@ import 'react-18-image-lightbox/style.css';
 import './GalleryComp.sass';
 
 export default function GalleryComp({ typeId }) {
+  //modal window open
   const [isOpen, setIsOpen] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
-  const [key, setKey] = useState(false);
+  //index of image in modal window
+    const [imgIndex, setImgIndex] = useState(0);
+  //required for lightbox to work properly
+    const [key, setKey] = useState(false);
 
   // to prevent indefinite download of the img downloading in modal window
   useEffect(() => {
