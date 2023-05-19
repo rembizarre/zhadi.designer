@@ -17,9 +17,8 @@ const modalStyles = {
 
 Modal.setAppElement('#root');
 
-const Services = ({ useSetIsContact }) => {
-  // to show Footer or not
-  useSetIsContact(false);
+const Services = () => {
+
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);

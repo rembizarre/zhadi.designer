@@ -4,9 +4,7 @@ import secondPhoto from '../assets/images/Нури.jpeg';
 import Button from '../components/Button/Button';
 import PortfolioComponent from '../components/Portfolio/PortfolioComp';
 
-const Main = ({ useSetIsContact }) => {
-  // to show Footer or not
-  useSetIsContact(false);
+const Main = () => {
 
   // animations
   const firstAnimation = useSpring({

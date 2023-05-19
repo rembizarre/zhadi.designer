@@ -4,9 +4,7 @@ import secondPhoto from "../assets/images/Нури.jpeg";
 import firstBg from "../assets/images/Фон для Жади 1.jpeg";
 import secondBg from "../assets/images/фон для Нури 1.jpeg";
 
-const About = ({ useSetIsContact }) => {
-  // to show Footer or not 
-  useSetIsContact(false);
+const About = () => {
 
   // animations
   const [fRef, fInView] = useInView(

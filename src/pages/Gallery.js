@@ -1,8 +1,6 @@
 import GalleryComp from '../components/Gallery/GalleryComp';
 
-export default function Gallery({ useSetIsContact }) {
-  // to show Footer or not
-  useSetIsContact(false);
+export default function Gallery() {
 
   // getting required type of portfolio and passing it to GalleryComp
   const typeName = +window.location.pathname.split('/').pop();
